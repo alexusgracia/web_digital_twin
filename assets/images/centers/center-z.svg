@@ -1,0 +1,6 @@
+<svg width="240" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="100" fill="#1a2030"/>
+  <rect x="20" y="20" width="200" height="60" rx="8" fill="#8b5cf6" opacity="0.8"/>
+  <text x="120" y="45" text-anchor="middle" fill="#e6e8ef" font-family="Arial" font-size="14" font-weight="bold">CENTER</text>
+  <text x="120" y="65" text-anchor="middle" fill="#e6e8ef" font-family="Arial" font-size="18" font-weight="bold">Z</text>
+</svg>

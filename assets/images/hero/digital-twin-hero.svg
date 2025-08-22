@@ -1,0 +1,140 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="digitalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.7" />
+      <stop offset="50%" style="stop-color:#f39c12;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Filtros -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo con gradiente sutil -->
+  <rect width="600" height="400" fill="url(#glowGradient)"/>
+  
+  <!-- Línea de horizonte -->
+  <line x1="0" y1="320" x2="600" y2="320" stroke="#34495e" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Edificio físico (lado izquierdo) -->
+  <g transform="translate(50, 200)">
+    <!-- Base del edificio -->
+    <rect x="0" y="0" width="120" height="100" fill="url(#buildingGradient)" rx="5"/>
+    
+    <!-- Ventanas -->
+    <rect x="15" y="15" width="20" height="15" fill="#ecf0f1" opacity="0.8"/>
+    <rect x="45" y="15" width="20" height="15" fill="#ecf0f1" opacity="0.8"/>
+    <rect x="75" y="15" width="20" height="15" fill="#ecf0f1" opacity="0.8"/>
+    <rect x="15" y="40" width="20" height="15" fill="#ecf0f1" opacity="0.8"/>
+    <rect x="45" y="40" width="20" height="15" fill="#ecf0f1" opacity="0.8"/>
+    <rect x="75" y="40" width="20" height="15" fill="#ecf0f1" opacity="0.8"/>
+    
+    <!-- Puerta -->
+    <rect x="45" y="70" width="20" height="30" fill="#2c3e50"/>
+    
+    <!-- Chimenea -->
+    <rect x="90" y="-20" width="15" height="20" fill="#34495e"/>
+    <circle cx="97.5" cy="-25" r="3" fill="#e74c3c" opacity="0.8"/>
+    
+    <!-- Etiqueta "Physical World" -->
+    <text x="60" y="130" text-anchor="middle" fill="#2c3e50" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Physical World</text>
+  </g>
+  
+  <!-- Representación digital (lado derecho) -->
+  <g transform="translate(430, 180)">
+    <!-- Base digital -->
+    <rect x="0" y="0" width="120" height="120" fill="url(#digitalGradient)" rx="10" opacity="0.9"/>
+    
+    <!-- Elementos digitales -->
+    <circle cx="30" cy="30" r="8" fill="#ecf0f1" opacity="0.9"/>
+    <circle cx="60" cy="30" r="8" fill="#ecf0f1" opacity="0.9"/>
+    <circle cx="90" cy="30" r="8" fill="#ecf0f1" opacity="0.9"/>
+    
+    <!-- Líneas de datos -->
+    <line x1="20" y1="50" x2="100" y2="50" stroke="#ecf0f1" stroke-width="2" opacity="0.7"/>
+    <line x1="20" y1="65" x2="80" y2="65" stroke="#ecf0f1" stroke-width="2" opacity="0.7"/>
+    <line x1="20" y1="80" x2="90" y2="80" stroke="#ecf0f1" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Puntos de datos -->
+    <circle cx="25" cy="50" r="2" fill="#f39c12"/>
+    <circle cx="45" cy="50" r="2" fill="#e74c3c"/>
+    <circle cx="65" cy="50" r="2" fill="#27ae60"/>
+    <circle cx="85" cy="50" r="2" fill="#9b59b6"/>
+    
+    <!-- Etiqueta "Digital Twin" -->
+    <text x="60" y="140" text-anchor="middle" fill="#2980b9" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Digital Twin</text>
+  </g>
+  
+  <!-- Conexiones entre físico y digital -->
+  <g>
+    <!-- Línea principal de conexión -->
+    <line x1="170" y1="250" x2="430" y2="250" stroke="url(#connectionGradient)" stroke-width="4" opacity="0.8"/>
+    
+    <!-- Flechas de datos -->
+    <polygon points="420,245 430,250 420,255" fill="#e74c3c" opacity="0.8"/>
+    <polygon points="180,245 170,250 180,255" fill="#27ae60" opacity="0.8"/>
+    
+    <!-- Puntos de conexión -->
+    <circle cx="170" cy="250" r="6" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="430" cy="250" r="6" fill="#27ae60" opacity="0.9"/>
+    
+    <!-- Elementos IoT flotantes -->
+    <g transform="translate(250, 200)">
+      <!-- Sensor -->
+      <circle cx="0" cy="0" r="8" fill="#f39c12" opacity="0.8"/>
+      <circle cx="0" cy="0" r="4" fill="#ecf0f1"/>
+      <text x="0" y="25" text-anchor="middle" fill="#f39c12" font-family="Arial, sans-serif" font-size="10">IoT</text>
+    </g>
+    
+    <g transform="translate(320, 180)">
+      <!-- Nube de datos -->
+      <ellipse cx="0" cy="0" rx="12" ry="8" fill="#3498db" opacity="0.7"/>
+      <ellipse cx="-8" cy="0" rx="8" ry="6" fill="#3498db" opacity="0.7"/>
+      <ellipse cx="8" cy="0" rx="8" ry="6" fill="#3498db" opacity="0.7"/>
+      <text x="0" y="25" text-anchor="middle" fill="#3498db" font-family="Arial, sans-serif" font-size="10">Data</text>
+    </g>
+  </g>
+  
+  <!-- Elementos decorativos -->
+  <g>
+    <!-- Partículas flotantes -->
+    <circle cx="100" cy="100" r="2" fill="#3498db" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="80" r="1.5" fill="#e74c3c" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="150" r="1" fill="#f39c12" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="120" r="1.5" fill="#27ae60" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Título principal -->
+  <text x="300" y="50" text-anchor="middle" fill="#2c3e50" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Digital Twin Research</text>
+  <text x="300" y="75" text-anchor="middle" fill="#7f8c8d" font-family="Arial, sans-serif" font-size="14">Bridging Physical and Digital Worlds</text>
+</svg>
