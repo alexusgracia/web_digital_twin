@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Twin - Research Project</title>
+    <meta name="description" content="Research project website about Digital Twins: overview, publications, contributors and partner centers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#home" class="brand" aria-label="Go to home">
+          <span class="brand-mark">DT</span>
+          <span class="brand-text">Digital Twin</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#descripcion">Project Description</a></li>
+            <li><a class="nav-link" href="#publicaciones">Publications</a></li>
+            <li><a class="nav-link" href="#personas">Contributors</a></li>
+            <li><a class="nav-link" href="#centros">Research Centers</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero" role="region" aria-labelledby="home-title">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1 id="home-title">Digital Twin for University Research</h1>
+            <p>
+              This project explores the use of digital twins to model, simulate, and
+              optimize complex systems in academic and industrial environments. Our
+              platform integrates real-time data, advanced analytics, and interactive
+              visualization to support decision making.
+            </p>
+            <div class="hero-cta">
+              <a class="button primary" href="#descripcion">Explore the project</a>
+              <a class="button" href="#publicaciones">See publications</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="https://images.unsplash.com/photo-1559757175-08fda9f3a4d4?q=80&w=1600&auto=format&fit=crop" alt="Graphic representation of a digital twin" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section id="descripcion" class="section" role="region" aria-labelledby="descripcion-title">
+        <div class="container">
+          <h2 id="descripcion-title">Project Description</h2>
+          <p>
+            The project aims to develop a modular digital twin framework that connects
+            physical models, sensor data, and AI algorithms. The architecture proposes
+            data ingestion layers, simulation orchestration, and web visualization to
+            create a living virtual representation of the real system.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Data integration:</strong> pipelines for historical and real-time data.</li>
+            <li><strong>Modeling and simulation:</strong> compatibility with multiple simulation engines.</li>
+            <li><strong>Analytics and AI:</strong> anomaly detection, forecasting, and optimization.</li>
+            <li><strong>Visualization:</strong> interactive dashboards and open APIs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="publicaciones" class="section alt" role="region" aria-labelledby="publicaciones-title">
+        <div class="container">
+          <h2 id="publicaciones-title">Publications</h2>
+          <ol class="pub-list">
+            <li>
+              <span class="pub-title">A Modular Digital Twin Framework for Smart Manufacturing</span>
+              <span class="pub-venue">IEEE Transactions, 2024</span>
+            </li>
+            <li>
+              <span class="pub-title">Real-time Data Fusion in University Testbeds</span>
+              <span class="pub-venue">ACM SIGSIM, 2023</span>
+            </li>
+            <li>
+              <span class="pub-title">Visual Analytics for Cyber-Physical Systems</span>
+              <span class="pub-venue">Journal of Industrial Informatics, 2022</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="personas" class="section" role="region" aria-labelledby="personas-title">
+        <div class="container">
+          <h2 id="personas-title">Contributors</h2>
+          <div class="card-grid">
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=400&auto=format&fit=crop" alt="Foto de Alex Rodríguez" loading="lazy">
+              <h3>Alex Rodríguez</h3>
+              <p>Principal researcher. Modeling and simulation.</p>
+              <div class="person-specialty">Specialty: Systems modeling and simulation</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-universidad-x">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=University+X" alt="Logo University X" loading="lazy">
+                <span class="affiliation-name">University X</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop" alt="Foto de María López" loading="lazy">
+              <h3>María López</h3>
+              <p>Data engineering and visualization.</p>
+              <div class="person-specialty">Specialty: Data engineering and visualization</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-instituto-y">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=Institute+Y" alt="Logo Institute Y" loading="lazy">
+                <span class="affiliation-name">Institute Y</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop" alt="Foto de Javier García" loading="lazy">
+              <h3>Javier García</h3>
+              <p>AI algorithms and optimization.</p>
+              <div class="person-specialty">Specialty: Artificial Intelligence and optimization</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-centro-z">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=Center+Z" alt="Logo Center Z" loading="lazy">
+                <span class="affiliation-name">Center Z</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=400&auto=format&fit=crop" alt="Foto de Sara Pérez" loading="lazy">
+              <h3>Sara Pérez</h3>
+              <p>Systems integration and deployment.</p>
+              <div class="person-specialty">Specialty: Systems integration and deployment</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-lab-ciberfisica">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=Cyber-Physical+Lab" alt="Logo Cyber-Physical Lab" loading="lazy">
+                <span class="affiliation-name">Cyber-Physical Lab</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop" alt="Foto de Lucía Fernández" loading="lazy">
+              <h3>Lucía Fernández</h3>
+              <p>Software architecture and APIs.</p>
+              <div class="person-specialty">Specialty: Software architecture and APIs</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-centro-robotica">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=Robotics+Center" alt="Logo Robotics Center" loading="lazy">
+                <span class="affiliation-name">Robotics Center</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=400&auto=format&fit=crop" alt="Foto de Pedro Sánchez" loading="lazy">
+              <h3>Pedro Sánchez</h3>
+              <p>DevOps and cloud deployment.</p>
+              <div class="person-specialty">Specialty: DevOps and cloud computing</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-instituto-ia">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=AI+Institute" alt="Logo AI Institute" loading="lazy">
+                <span class="affiliation-name">AI Institute</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1527980965255-8fdf0b3165f7?q=80&w=400&auto=format&fit=crop" alt="Foto de Elena Martínez" loading="lazy">
+              <h3>Elena Martínez</h3>
+              <p>Data quality and MLOps.</p>
+              <div class="person-specialty">Specialty: MLOps and data quality</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-lab-iot">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=IoT+Lab" alt="Logo IoT Lab" loading="lazy">
+                <span class="affiliation-name">IoT Lab</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Foto de Carlos Ruiz" loading="lazy">
+              <h3>Carlos Ruiz</h3>
+              <p>Data security and governance.</p>
+              <div class="person-specialty">Specialty: Data security and governance</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-centro-datos">
+                <img class="affiliation-logo" src="https://dummyimage.com/120x50/1a2030/e6e8ef.png&text=Data+Center" alt="Logo Data Center" loading="lazy">
+                <span class="affiliation-name">Data Center</span>
+              </a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="centros" class="section alt" role="region" aria-labelledby="centros-title">
+        <div class="container">
+          <h2 id="centros-title">Partner Research Centers</h2>
+          <div class="logo-grid">
+            <div class="logo-item" id="center-universidad-x">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=University+X" alt="Logo University X" loading="lazy">
+              <div class="logo-name">University X</div>
+            </div>
+            <div class="logo-item" id="center-instituto-y">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=Institute+Y" alt="Logo Institute Y" loading="lazy">
+              <div class="logo-name">Institute Y</div>
+            </div>
+            <div class="logo-item" id="center-centro-z">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=Center+Z" alt="Logo Center Z" loading="lazy">
+              <div class="logo-name">Center Z</div>
+            </div>
+            <div class="logo-item" id="center-lab-ciberfisica">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=Cyber-Physical+Lab" alt="Logo Cyber-Physical Lab" loading="lazy">
+              <div class="logo-name">Cyber-Physical Lab</div>
+            </div>
+            <div class="logo-item" id="center-centro-robotica">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=Robotics+Center" alt="Logo Robotics Center" loading="lazy">
+              <div class="logo-name">Robotics Center</div>
+            </div>
+            <div class="logo-item" id="center-instituto-ia">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=AI+Institute" alt="Logo AI Institute" loading="lazy">
+              <div class="logo-name">AI Institute</div>
+            </div>
+            <div class="logo-item" id="center-lab-iot">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=IoT+Lab" alt="Logo IoT Lab" loading="lazy">
+              <div class="logo-name">IoT Lab</div>
+            </div>
+            <div class="logo-item" id="center-centro-datos">
+              <img src="https://dummyimage.com/240x100/1a2030/e6e8ef.png&text=Data+Center" alt="Logo Data Center" loading="lazy">
+              <div class="logo-name">Data Center</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Digital Twin Project — University</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
