@@ -215,9 +215,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-.logo-item { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; color: var(--muted); }
-.logo-item img { width: 100%; height: auto; max-height: 80px; object-fit: contain; filter: saturate(0.6); }
-.logo-item .logo-name { margin-top: 10px; color: var(--muted); font-size: 0.95rem; }
+.logo-item { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; color: var(--text); }
+.logo-item img { width: 100%; height: auto; max-height: 80px; object-fit: contain; filter: saturate(0.6); background: white; padding: 10px; border-radius: 8px; }
+.logo-item .logo-name { margin-top: 10px; color: var(--text); font-size: 0.95rem; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); background: #0e1118; }
@@ -331,4 +331,95 @@ html { scroll-behavior: smooth; }
   }
 }
 
+/* Funding Section */
+.funding-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
+.funding-text {
+  max-width: 600px;
+}
+
+.funding-text p {
+  margin: 0.5rem 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.funding-text p:first-child {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.funding-text strong {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.funding-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.funding-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.funding-logo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.funding-logo-item img {
+  max-width: 200px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.funding-logo-name {
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .funding-content {
+    gap: 1.5rem;
+  }
+  
+  .funding-logos {
+    gap: 1rem;
+  }
+  
+  .funding-logo-item {
+    padding: 1rem;
+  }
+  
+  .funding-logo-item img {
+    max-width: 150px;
+    max-height: 80px;
+  }
+}
