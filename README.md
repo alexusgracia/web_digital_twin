@@ -49,7 +49,7 @@ Tienes dos opciones. La más simple es usar la carpeta `docs/`. La más flexible
    - Source: Deploy from a branch
    - Branch: `main` y carpeta `/docs`
 
-4) La URL será `https://<tu_usuario>.github.io/<tu_repo>/`.
+4) La URL será `https://alexusgracia.github.io/web_digital_twin/`.
 
 Notas:
 - Las rutas son relativas (e.g. `styles.css`), por lo que funcionan en Pages sin cambios.
