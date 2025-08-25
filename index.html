@@ -25,7 +25,8 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <ul>
             <li><a class="nav-link active" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#description">Project Description</a></li>
+            <li><a class="nav-link" href="#description">Description</a></li>
+            <li><a class="nav-link" href="#tools">Tools</a></li>
             <li><a class="nav-link" href="#publications">Publications</a></li>
             <li><a class="nav-link" href="#final-projects">Final Studies Projects</a></li>
             <li><a class="nav-link" href="#contributors">Contributors</a></li>
@@ -39,13 +40,13 @@
       <section id="home" class="section hero" role="region" aria-labelledby="home-title">
         <div class="container hero-grid">
           <div class="hero-text">
-            <h1 id="home-title">Digital Twin for University Research</h1>
+            <h1 id="home-title">HP2C-DT: High-Precision, High-Performance Digital Twin</h1>
             <p>
-              This project embraces the digital and green transition to develop a high-precision, high-computational performance digital twin (HP2C-DT) for modern power systems. HP2C-DT aims to develop an innovative Digital Twin (DT) network concept, capable of representing with a high degree of fidelity modern electrical systems in a wide variety of applications, such as transmission, distribution, generation, railway and industrial networks. The main objective of the project is to maximize its resilience and real-time performance during the complex energy transition. 
+              The project embraces the digital and green transition to develop a High-Precision, High-Performance Computing-enabled Digital Twin (HP2C-DT) for modern power systems. HP2C-DT represents with high fidelity transmission, distribution, generation, railway and industrial networks, aiming to maximize resilience and real-time performance during the transition towards a 100% renewable system.
             </p>
             <div class="hero-cta">
               <a class="button primary" href="#description">Explore the project</a>
-              <a class="button" href="#publications">See publications</a>
+              <a class="button" href="#publications">View Publications</a>
             </div>
           </div>
           <div class="hero-media">
@@ -53,61 +54,138 @@
           </div>
         </div>
       </section>
-
       <section id="description" class="section" role="region" aria-labelledby="description-title">
         <div class="container">
           <h2 id="description-title">Project Description</h2>
           <p>
-            The project aims to develop a modular digital twin framework that connects
-            physical models, sensor data, and AI algorithms. The architecture proposes
-            data ingestion layers, simulation orchestration, and web visualization to
-            create a living virtual representation of the real system.
+            HP2C-DT is a digital twin concept for power systems that blends physics-based models with real-time data, exploiting central HPC and edge computing to enable high-speed autonomous decision-making. It supports network owners and operators to operate safely power-electronics-dominated systems during the energy transition.
           </p>
           <ul class="feature-list">
-            <li><strong>Data integration:</strong> pipelines for historical and real-time data.</li>
-            <li><strong>Modeling and simulation:</strong> compatibility with multiple simulation engines.</li>
-            <li><strong>Analytics and AI:</strong> anomaly detection, forecasting, and optimization.</li>
-            <li><strong>Visualization:</strong> interactive dashboards and open APIs.</li>
+            <li><strong>Modern dynamics capture:</strong> faithful representation of power-electronics-dominated networks.</li>
+            <li><strong>HPC:</strong> large-scale, high-precision simulations and massive data processing.</li>
+            <li><strong>Hybrid models:</strong> blending physics and measured data for real-time state.</li>
+            <li><strong>Edge computing:</strong> fast local actions coordinated with central computing.</li>
+            <li><strong>Autonomy:</strong> real-time decision-making to maximize resilience and performance.</li>
+            <li><strong>Interoperability:</strong> open framework to interconnect DTs across network levels.</li>
           </ul>
+          <p>
+            Specific objectives: SO1) represent very large networks with high accuracy; SO2) real-time data-driven model updates; SO3) architecture and implementation with edge-based deployment; SO4) tools for transmission, distribution, generation and industrial applications; SO5) open procedure to build electrical system DTs.
+          </p>
         </div>
       </section>
 
-      <section id="publications" class="section alt" role="region" aria-labelledby="publications-title">
+      <section id="tools" class="section alt" role="region" aria-labelledby="publications-title">
         <div class="container">
-          <h2 id="publications-title">Publications</h2>
+          <h2 id="publications-title">Project Tools (A–E)</h2>
           <div class="publications-grid">
             <article class="publication-card">
               <div class="publication-header">
-                <h3>A Modular Digital Twin Framework for EXAMPLE</h3>
+                <h3>A. Online stability and interaction detection</h3>
+                <span class="publication-year">Real time</span>
+              </div>
+              <p class="publication-venue">Detect instabilities and interactions between elements.</p>
+              <p class="publication-abstract">
+                Continuous assessment of stability and interactions in networks with high power-electronics penetration, enabling rapid mitigation.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Stability</span>
+                <span class="tag">Interactions</span>
+                <span class="tag">Real time</span>
+              </div>
+            </article>
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>B. Network performance and equivalents</h3>
+                <span class="publication-year">Optimization</span>
+              </div>
+              <p class="publication-venue">Optimal operation and real-time equivalents calculation.</p>
+              <p class="publication-abstract">
+                Optimizes operation leveraging power electronics controllability and computes equivalents (incl. short-circuit with PE) for system studies.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Optimization</span>
+                <span class="tag">Equivalents</span>
+                <span class="tag">Grid services</span>
+              </div>
+            </article>
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>C. Adaptive protection</h3>
+                <span class="publication-year">Online measurements</span>
+              </div>
+              <p class="publication-venue">Protection tuning and coordination based on network state.</p>
+              <p class="publication-abstract">
+                Adapts protections to topology, short-circuit capability and control mode (grid-following/forming), maximizing resilience.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Protection</span>
+                <span class="tag">Adaptive</span>
+                <span class="tag">Resilience</span>
+              </div>
+            </article>
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>D. Probabilistic scenario generation</h3>
+                <span class="publication-year">+1m/+15m/+24h</span>
+              </div>
+              <p class="publication-venue">Preventive multi-period analysis.</p>
+              <p class="publication-abstract">
+                Generates and evaluates scenarios using weather forecasts, generation and contingencies to support preventive decisions improving performance and resilience.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Probabilistic</span>
+                <span class="tag">Forecasting</span>
+                <span class="tag">Prevention</span>
+              </div>
+            </article>
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>E. Real-time autonomous control</h3>
+                <span class="publication-year">Central + Edge</span>
+              </div>
+              <p class="publication-venue">Automatic/autonomous grid operation.</p>
+              <p class="publication-abstract">
+                Executes decisions based on tools A–D, distributing computation between central (or cloud) HPC and the edge for fast, coordinated responses.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Autonomy</span>
+                <span class="tag">Edge</span>
+                <span class="tag">HPC</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section" role="region" aria-labelledby="publications-title-2">
+        <div class="container">
+          <h2 id="publications-title-2">Publications</h2>
+          <div class="publications-grid">
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>A Modular Digital Twin Framework for Power Systems</h3>
                 <span class="publication-year">2024</span>
               </div>
               <p class="publication-venue">IEEE Transactions on Industrial Informatics</p>
-              <p class="publication-authors">Authors: Dr. María López, Dr. Carlos Ruiz, Prof. Elena Martínez</p>
+              <p class="publication-authors">Authors: M. López, C. Ruiz, E. Martínez</p>
               <p class="publication-abstract">
-                This paper presents a comprehensive framework for implementing digital twins in smart manufacturing environments, 
-                focusing on modular architecture and real-time data integration capabilities.
+                A comprehensive framework for implementing digital twins in power systems, focusing on modular architecture and real-time data integration.
               </p>
               <div class="publication-tags">
                 <span class="tag">Digital Twin</span>
-                <span class="tag">Smart Manufacturing</span>
+                <span class="tag">Power Systems</span>
                 <span class="tag">IoT</span>
               </div>
             </article>
-            
-           
-            
-            <
-            
             <article class="publication-card">
               <div class="publication-header">
                 <h3>Machine Learning Integration in Digital Twin Architectures</h3>
                 <span class="publication-year">2023</span>
               </div>
               <p class="publication-venue">IEEE Internet of Things Journal</p>
-              <p class="publication-authors">Authors: Dr. Roberto Silva, Dr. Patricia Moreno, Prof. Javier López</p>
+              <p class="publication-authors">Authors: R. Silva, P. Moreno, J. López</p>
               <p class="publication-abstract">
-                Comprehensive study on integrating machine learning algorithms within digital twin frameworks, 
-                enabling predictive analytics and autonomous decision-making capabilities.
+                Study on integrating machine learning algorithms within digital twin frameworks, enabling predictive analytics and autonomous decision-making.
               </p>
               <div class="publication-tags">
                 <span class="tag">Machine Learning</span>
@@ -115,11 +193,13 @@
                 <span class="tag">Autonomous Systems</span>
               </div>
             </article>
-
-
           </div>
         </div>
       </section>
+
+      
+
+      
 
       <section id="final-projects" class="section" role="region" aria-labelledby="final-projects-title">
         <div class="container">
@@ -143,7 +223,8 @@
 
             <article class="project-card">
               <div class="project-header">
-                <h3>Analysis of consecutive contingencies using network digital twins</h3>
+                <h3>Probabilistic analysis of errors in an IEEE model using a digital twin: a study of successive scenarios and probabilities
+                </h3>
                 <span class="project-year">2025</span>
               </div>
               <p class="project-author">Author: Carla Segura Romero</p>
@@ -244,6 +325,17 @@
               <div class="affiliation"><a class="affiliation-link" href="#center-bsc">
                 <img class="affiliation-logo" src="assets/images/centers/bsc_logo.png" alt="Logo BSC" loading="lazy">
                 <span class="affiliation-name">Barcelona Supercomputing Center</span>
+              </a></div>
+            </article>
+
+            <article class="card">
+              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Carla Segura Romero" loading="lazy">
+              <h3>Carla Segura Romero</h3>
+              <p>Master's student and Industrial Engineering student.</p>
+              <div class="person-specialty">Specialty: Industrial Engineering</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-bsc">
+                <img class="affiliation-logo" src="assets/images/centers/citcea.png" alt="Logo CITCEA" loading="lazy">
+                <span class="affiliation-name">CITCEA</span>
               </a></div>
             </article>
             
