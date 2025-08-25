@@ -23,7 +23,7 @@ jobs:
       - name: Upload artifact (site)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web_digital_twin
+          path: .
 
   deploy:
     needs: build
