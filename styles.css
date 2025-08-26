@@ -251,6 +251,14 @@ body {
   .nav-toggle { display: block; }
 }
 
+/* Contributors responsive tweaks */
+@media (max-width: 540px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .card { text-align: center; }
+  .card .person-photo { margin: 0 auto; }
+  .affiliation { justify-content: center; }
+}
+
 /* Anclas con compensación para header sticky */
 section[id] { scroll-margin-top: 80px; }
 
