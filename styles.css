@@ -341,6 +341,65 @@ html { scroll-behavior: smooth; }
   gap: 0.5rem;
 }
 
+/* Publication links */
+.publication-links {
+  display: flex;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--brand-600);
+  background: linear-gradient(135deg, var(--brand), var(--brand-600));
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.publication-link::after { content: "↗"; margin-left: 8px; font-size: 0.9em; line-height: 1; }
+.publication-link:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35); filter: saturate(1.05); }
+.publication-link[href="#"],
+.publication-link[aria-disabled="true"],
+.publication-link[disabled] {
+  pointer-events: none;
+  background: var(--panel);
+  color: var(--muted);
+  border-color: var(--border);
+  box-shadow: none;
+  opacity: 0.6;
+  transform: none;
+}
+.publication-link[href="#"]::after,
+.publication-link[aria-disabled="true"]::after,
+.publication-link[disabled]::after { content: ""; }
+.publication-doi {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  background: rgba(34, 211, 238, 0.10);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: nowrap;
+}
+.publication-doi a { color: var(--accent); text-decoration: none; }
+.publication-doi a:hover { text-decoration: underline; }
+
+@media (max-width: 540px) {
+  .publication-links { justify-content: center; gap: 0.5rem 0.75rem; }
+}
+
 @media (max-width: 768px) {
   .publications-grid {
     gap: 0.75rem;
