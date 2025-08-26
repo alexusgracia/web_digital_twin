@@ -17,6 +17,7 @@ yarn-error.log*
 .env
 .env.*
 *.local
+venv/
 
 # Dependencias y builds (por si se añaden en el futuro)
 node_modules/
