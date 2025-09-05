@@ -212,6 +212,13 @@ body {
 }
 .card h3 { margin: 8px 0 8px; }
 .card p { margin: 0; color: var(--muted); }
+.person-description {
+  min-height: 3em;
+  line-height: 1.5;
+  display: block;
+  margin: 8px 0;
+}
+
 .person-specialty {
   display: inline-block;
   margin-top: 8px;
@@ -224,6 +231,8 @@ body {
   min-height: 3em;
   line-height: 1.5;
   vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
 }
 .avatar { width: 40px; height: 40px; border-radius: 10px; background: #1a2030; display: grid; place-items: center; font-weight: 700; }
 
