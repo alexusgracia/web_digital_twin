@@ -1,9 +1,7 @@
 # Web HP2C-DT
 
-## Disponible a: https://alexusgracia.github.io/web_digital_twin/
-[Website](https://alexusgracia.github.io/web_digital_twin/)
-i a 
-[Website](https://citcea.digital-twin.upc.edu)
+## Disponible a:[https://alexusgracia.github.io/web_digital_twin/](https://alexusgracia.github.io/web_digital_twin/)
+i a [https://citcea.digital-twin.upc.edu](https://citcea.digital-twin.upc.edu).
 
 ## Estructura
 
@@ -26,5 +24,6 @@ Visitar `http://localhost:8000`.
 
 ## Creada por:
 Alexandre Gràcia i Calvo
+
 
 
