@@ -3,8 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Digital Twin - Research Project</title>
-    <meta name="description" content="Research project website about Digital Twins: overview, publications, contributors and partner centers.">
+    <title>HP2C-DT: High-Precision, High-Performance Digital Twin | Research Project</title>
+    <meta name="description" content="HP2C-DT is a High-Precision, High-Performance Computing-enabled Digital Twin for modern power systems. Research project by CITCEA-UPC and BSC.">
+    <meta name="keywords" content="digital twin, power systems, HPC, high-performance computing, electrical networks, renewable energy, grid stability">
+    <meta name="author" content="CITCEA-UPC">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://citcea.digital-twin.upc.edu/">
+    <meta property="og:title" content="HP2C-DT: High-Precision, High-Performance Digital Twin">
+    <meta property="og:description" content="High-Precision, High-Performance Computing-enabled Digital Twin for modern power systems. Research project by CITCEA-UPC and BSC.">
+    <meta property="og:image" content="https://citcea.digital-twin.upc.edu/assets/images/hero/hands.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://citcea.digital-twin.upc.edu/">
+    <meta property="twitter:title" content="HP2C-DT: High-Precision, High-Performance Digital Twin">
+    <meta property="twitter:description" content="High-Precision, High-Performance Computing-enabled Digital Twin for modern power systems.">
+    <meta property="twitter:image" content="https://citcea.digital-twin.upc.edu/assets/images/hero/hands.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -27,10 +44,14 @@
             <li><a class="nav-link active" href="#home">Home</a></li>
             <li><a class="nav-link" href="#description">Description</a></li>
             <li><a class="nav-link" href="#tools">Tools</a></li>
+            <li><a class="nav-link" href="#results">Results</a></li>
             <li><a class="nav-link" href="#publications">Publications</a></li>
+            <li><a class="nav-link" href="#resources">Resources</a></li>
             <li><a class="nav-link" href="#final-projects">Final Studies Projects</a></li>
+            <li><a class="nav-link" href="#impact">Impact</a></li>
             <li><a class="nav-link" href="#contributors">Contributors</a></li>
             <li><a class="nav-link" href="#centers">Research Centers</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -164,6 +185,30 @@
                 <span class="tag">HPC</span>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section" role="region" aria-labelledby="results-title">
+        <div class="container">
+          <h2 id="results-title">Project Results and Achievements</h2>
+          <p>
+            The HP2C-DT coordinated project has developed a comprehensive Digital Twin of the electrical system supported by a distributed architecture that combines HPC, edge, and cloud computing in a coordinated manner. The HPC environment enables large-scale EMT simulations and high-fidelity dynamic models, the edge layer facilitates local processing close to the infrastructure, and the cloud/server layer acts as an integration point for data, models, and services.
+          </p>
+          <p>
+            This scalable architecture allows for accurate representation of modern electrical systems, incorporation of near real-time information, and execution of advanced analysis and optimization tools. The project has successfully integrated physics-based models with real-time data, enabling high-speed autonomous decision-making for power system operators.
+          </p>
+          <div class="objectives">
+            <div class="objectives-title">Key achievements:</div>
+            <ul class="objectives-list">
+              <li>Development of a distributed computing framework using COMPSs for seamless workload distribution</li>
+              <li>Implementation of online stability and interaction detection tools</li>
+              <li>Creation of network performance and equivalents calculation tools</li>
+              <li>Development of protection-related tools for adaptive coordination</li>
+              <li>Implementation of probabilistic scenario generation for preventive analysis</li>
+              <li>Real-time autonomous control system integrating central and edge computing</li>
+              <li>Open-source tools and frameworks for the research community</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -498,9 +543,83 @@
         </div>
       </section>
 
-      
+      <section id="resources" class="section alt" role="region" aria-labelledby="resources-title">
+        <div class="container">
+          <h2 id="resources-title">Resources and Software</h2>
+          <p>
+            The HP2C-DT project has developed and contributed to several open-source tools and resources that are available to the research community. These resources facilitate reproducible research and accelerate the development of next-generation power system solutions.
+          </p>
+          <div class="publications-grid">
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>Data Generation Framework</h3>
+                <span class="publication-year">Open Source</span>
+              </div>
+              <p class="publication-venue">High-performance computing framework for systematic dataset generation</p>
+              <p class="publication-abstract">
+                Open-source Python framework for generating large and representative datasets for stability assessment in power systems with high penetration of inverter-based resources. Includes adaptive sampling strategies and parallel execution capabilities.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Python</span>
+                <span class="tag">HPC</span>
+                <span class="tag">Data Generation</span>
+                <span class="tag">Open Source</span>
+              </div>
+            </article>
 
-      
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>Distribution Network Reconfiguration</h3>
+                <span class="publication-year">Open Source</span>
+              </div>
+              <p class="publication-venue">Open-source repository with documented implementations</p>
+              <p class="publication-abstract">
+                Comprehensive open-source repository containing documented implementations of distribution network reconfiguration algorithms, including classical heuristic methods, meta-heuristic approaches, and mathematical optimization techniques.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">Distribution Networks</span>
+                <span class="tag">Optimization</span>
+                <span class="tag">Open Source</span>
+                <span class="tag">Algorithms</span>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>GridCal</h3>
+                <span class="publication-year">Integration</span>
+              </div>
+              <p class="publication-venue">AC-OPF solver integration</p>
+              <p class="publication-abstract">
+                Integration of AC Optimal Power Flow (AC-OPF) solver capabilities into the GridCal framework, enhancing its optimization capabilities for power system analysis.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">GridCal</span>
+                <span class="tag">AC-OPF</span>
+                <span class="tag">Power Flow</span>
+                <span class="tag">Optimization</span>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <div class="publication-header">
+                <h3>HP2C-DT Framework</h3>
+                <span class="publication-year">COMPSs</span>
+              </div>
+              <p class="publication-venue">Distributed computing framework implementation</p>
+              <p class="publication-abstract">
+                Working implementation of the HP2C-DT framework using COMPSs for seamless workload distribution across diverse infrastructures, enabling dynamic task assignment to edge, cloud, or HPC resources.
+              </p>
+              <div class="publication-tags">
+                <span class="tag">COMPSs</span>
+                <span class="tag">Distributed Computing</span>
+                <span class="tag">HPC</span>
+                <span class="tag">Framework</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section id="final-projects" class="section" role="region" aria-labelledby="final-projects-title">
         <div class="container">
@@ -666,6 +785,59 @@
         </div>
       </section>
 
+      <section id="impact" class="section alt" role="region" aria-labelledby="impact-title">
+        <div class="container">
+          <h2 id="impact-title">Impact and Knowledge Transfer</h2>
+          
+          <div style="margin-bottom: 2em;">
+            <h3 style="font-size: 1.3em; margin-bottom: 1em; color: #2c3e50;">Scientific and Technical Impact</h3>
+            <p>
+              The HP2C-DT project has made significant contributions to the advancement of knowledge in digital twin technologies for power systems. The project has developed novel methodologies for integrating high-performance computing into real-time digital twin workflows, addressing critical challenges in modern power systems with high penetration of inverter-based resources.
+            </p>
+            <p>
+              Key scientific contributions include the development of distributed computing architectures that seamlessly integrate HPC, edge, and cloud computing, enabling high-precision simulations and real-time decision-making. The project has also advanced the state-of-the-art in stability assessment, protection coordination, and optimization techniques for power-electronics-dominated networks.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 2em;">
+            <h3 style="font-size: 1.3em; margin-bottom: 1em; color: #2c3e50;">Socio-Economic Impact</h3>
+            <p>
+              The project addresses critical needs in the energy transition towards 100% renewable systems. By providing tools and methodologies for safe operation of power-electronics-dominated networks, HP2C-DT supports grid operators and network owners in managing the increasing complexity of modern power systems.
+            </p>
+            <p>
+              The open-source nature of many project deliverables facilitates knowledge transfer to industry and academia, promoting reproducible research and accelerating the adoption of digital twin technologies in the power sector. The project's contributions to stability assessment and protection coordination directly support the reliability and resilience of electrical networks during the energy transition.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 2em;">
+            <h3 style="font-size: 1.3em; margin-bottom: 1em; color: #2c3e50;">Knowledge Transfer</h3>
+            <ul class="objectives-list" style="margin-top: 1em;">
+              <li>Publication of research results in high-impact journals and conferences</li>
+              <li>Development of open-source tools and frameworks available to the research community</li>
+              <li>Training of PhD candidates, master's students, and research assistants</li>
+              <li>Collaboration with industry partners and research centers</li>
+              <li>Dissemination through conferences, seminars, and technical presentations</li>
+              <li>Contribution to the development of standards and best practices for digital twins in power systems</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.3em; margin-bottom: 1em; color: #2c3e50;">Potential Applications</h3>
+            <p>
+              The HP2C-DT framework and tools have potential applications in:
+            </p>
+            <ul class="objectives-list" style="margin-top: 1em;">
+              <li>Transmission system operators (TSOs) for real-time monitoring and control</li>
+              <li>Distribution system operators (DSOs) for network optimization and planning</li>
+              <li>Power generation companies for renewable energy integration</li>
+              <li>Industrial facilities with complex electrical networks</li>
+              <li>Railway electrification systems</li>
+              <li>Research institutions and universities for power system studies</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="contributors" class="section" role="region" aria-labelledby="contributors-title">
         <div class="container">
           <h2 id="contributors-title">Contributors</h2>
@@ -675,6 +847,16 @@
               <h3>Eduardo Prieto Araujo</h3>
               <p class="person-description">Project Manager and Industrial Engineering teacher</p>
               <div class="person-specialty">Specialty: High Voltage and Power Systems</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-citcea">
+                <img class="affiliation-logo" src="assets/images/centers/CITCEA.png" alt="Logo CITCEA" loading="lazy">
+                <span class="affiliation-name">Universitat Politècnica de Catalunya</span>
+              </a></div>
+            </article>
+            <article class="card">
+              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Joan Gabriel Bergas Jané" loading="lazy">
+              <h3>Joan Gabriel Bergas Jané</h3>
+              <p class="person-description">Principal Investigator (IP2)</p>
+              <div class="person-specialty">Specialty: Power Systems and Converters</div>
               <div class="affiliation"><a class="affiliation-link" href="#center-citcea">
                 <img class="affiliation-logo" src="assets/images/centers/CITCEA.png" alt="Logo CITCEA" loading="lazy">
                 <span class="affiliation-name">Universitat Politècnica de Catalunya</span>
@@ -820,7 +1002,7 @@
             </article>
 
             <article class="card">
-              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Lee Raiyan bin Zulkifli" loading="lazy">
+              <img class="person-photo" src="assets/images/people/lee.webp" alt="Photo of Lee Raiyan bin Zulkifli" loading="lazy">
               <h3>Lee Raiyan bin Zulkifli</h3>
               <p class="person-description">Student</p>
               <div class="person-specialty">Specialty: AC/DC Power Flow Analysis</div>
@@ -831,7 +1013,7 @@
             </article>
 
             <article class="card">
-              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Ferriol Falip" loading="lazy">
+              <img class="person-photo" src="assets/images/people/ferriol.jfif" alt="Photo of Ferriol Falip" loading="lazy">
               <h3>Ferriol Falip</h3>
               <p class="person-description">Student</p>
               <div class="person-specialty">Specialty: Data Processing and Network Stability</div>
@@ -842,10 +1024,43 @@
             </article>
 
             <article class="card">
-              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Andrés Felipe González Casafús" loading="lazy">
+              <img class="person-photo" src="assets/images/people/andres-felipe.jpg" alt="Photo of Andrés Felipe González Casafús" loading="lazy">
               <h3>Andrés Felipe González Casafús</h3>
               <p class="person-description">Student</p>
               <div class="person-specialty">Specialty: Phasor Measurement Units</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-citcea">
+                <img class="affiliation-logo" src="assets/images/centers/CITCEA.png" alt="Logo CITCEA" loading="lazy">
+                <span class="affiliation-name">Universitat Politècnica de Catalunya</span>
+              </a></div>
+            </article>
+
+            <article class="card">
+              <img class="person-photo" src="assets/images/people/vinicius.webp" alt="Photo of Vinicius Albernaz Lacerda" loading="lazy">
+              <h3>Vinicius Albernaz Lacerda</h3>
+              <p class="person-description">Researcher and Lecturer</p>
+              <div class="person-specialty">Specialty: Power Systems and Protection</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-citcea">
+                <img class="affiliation-logo" src="assets/images/centers/CITCEA.png" alt="Logo CITCEA" loading="lazy">
+                <span class="affiliation-name">Universitat Politècnica de Catalunya</span>
+              </a></div>
+            </article>
+
+            <article class="card">
+              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Jaume Amorós Torrent" loading="lazy">
+              <h3>Jaume Amorós Torrent</h3>
+              <p class="person-description">Research Team Member</p>
+              <div class="person-specialty">Specialty: Power Systems</div>
+              <div class="affiliation"><a class="affiliation-link" href="#center-citcea">
+                <img class="affiliation-logo" src="assets/images/centers/CITCEA.png" alt="Logo CITCEA" loading="lazy">
+                <span class="affiliation-name">Universitat Politècnica de Catalunya</span>
+              </a></div>
+            </article>
+
+            <article class="card">
+              <img class="person-photo" src="assets/images/people/logo_basic.png" alt="Photo of Daniele Falchi" loading="lazy">
+              <h3>Daniele Falchi</h3>
+              <p class="person-description">Research Team Member</p>
+              <div class="person-specialty">Specialty: Power Systems Research</div>
               <div class="affiliation"><a class="affiliation-link" href="#center-citcea">
                 <img class="affiliation-logo" src="assets/images/centers/CITCEA.png" alt="Logo CITCEA" loading="lazy">
                 <span class="affiliation-name">Universitat Politècnica de Catalunya</span>
@@ -882,8 +1097,13 @@
           <h2 id="funding-title">Budget and Financing</h2>
           <div class="funding-content">
             <div class="funding-text">
-              <p>Proyectos Estratégicos Orientados a la «Transición Ecológica y a la Transición Digital</p>
+              <p>Proyectos Estratégicos Orientados a la «Transición Ecológica y a la Transición Digital»</p>
               <p><strong>2021</strong></p>
+              <p>The coordinated project HP2C-DT consists of two subprojects:</p>
+              <ul style="margin: 1em 0; padding-left: 2em; line-height: 1.8;">
+                <li><strong>TED2021-130351B-C21</strong> (CITCEA-UPC): High-Precision, High-Performance Computing-enabled Digital Twin for modern power system applications. Budget: €130,000 (direct costs). Period: December 1, 2022 - September 30, 2025.</li>
+                <li><strong>TED2021-130351B-C22</strong> (BSC): High-Performance Computing infrastructure and distributed computing framework for the HP2C-DT architecture.</li>
+              </ul>
               <p>The Project TED2021-130351B-C21 (HP2C-DT) is funded by MICIU/AEI/10.13039/501100011033 and by the European Union NextGenerationEU/PRTR.</p>
             </div>
             <div class="funding-logos">
@@ -899,7 +1119,43 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> HP2C-DT - CITCEA — Universitat Politècnica de Catalunya</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2em; padding: 2em 0; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+          <div>
+            <h3 style="font-size: 1.1em; margin-bottom: 1em; color: #fff;">Project</h3>
+            <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+              HP2C-DT: High-Precision, High-Performance Digital Twin for modern power systems.
+            </p>
+            <p style="color: rgba(255, 255, 255, 0.8); margin-top: 0.5em; font-size: 0.9em;">
+              TED2021-130351B-C21
+            </p>
+          </div>
+          
+          <div>
+            <h3 style="font-size: 1.1em; margin-bottom: 1em; color: #fff;">Contact</h3>
+            <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+              <strong style="color: #fff;">Eduardo Prieto Araujo</strong><br>
+              Principal Investigator<br>
+              <a href="mailto:eduardo.prieto[at]upc.edu" style="color: #4a9eff; text-decoration: none;">eduardo.prieto[at]upc.edu</a>
+            </p>
+          </div>
+          
+          <div>
+            <h3 style="font-size: 1.1em; margin-bottom: 1em; color: #fff;">Institutions</h3>
+            <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+              <a href="https://citcea.upc.edu" target="_blank" rel="noopener" style="color: #4a9eff; text-decoration: none;">CITCEA - UPC</a><br>
+              <a href="https://www.bsc.es" target="_blank" rel="noopener" style="color: #4a9eff; text-decoration: none;">Barcelona Supercomputing Center</a>
+            </p>
+          </div>
+        </div>
+        
+        <div style="text-align: center; padding-top: 1.5em; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 1em;">
+          <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9em;">
+            © <span id="year"></span> HP2C-DT - CITCEA — Universitat Politècnica de Catalunya
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.85em; margin-top: 0.5em;">
+            Funded by MICIU/AEI and the European Union NextGenerationEU/PRTR
+          </p>
+        </div>
       </div>
     </footer>
 
